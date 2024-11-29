@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.physicalwellbeing-section {
+    display: flex;
+    flex-direction: row; /* Horizontal scrolling for sections */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    background-color: #fbebd6; /* Light peach background */
+    padding: 2rem; /* Add padding for a cleaner look */
+    height: 100vh; /* Keep the section height full */
+    scroll-snap-type: x mandatory; /* Smooth scrolling between sections */
+  }
+  
+  .physicalwellbeing-container {
+    flex: 0 0 100%; /* Each child takes full width of the viewport */
+    display: flex; /* Arrange image and text side by side */
+    flex-direction: row; /* Ensure image and text are in a row */
+    scroll-snap-align: start; /* Align each section with the viewport */
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content horizontally */
+  }
+  
+  .physical-image-container {
+    flex: 1; /* Allow image container to take 50% width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .physicalwellbeing-image {
+    width: 40%; /* Slightly smaller to leave space */
+    height: 400px; /* Consistent height for images */
+    border-radius: 46%;
+    object-fit: cover;
+  }
+  
+  .physicalwellbeing-text-container {
+    flex: 1; /* Allow text container to take 50% width */
+    text-align: left;
+    padding: 2rem;
+  }
+  
+  .physicalwellbeing-title {
+    font-size: 44px;
+    color: #951a29; /* Dark red */
+    margin: 0;
+    font-family: 'Roxborough CF', serif;
+  }
+  
+  .physicalwellbeing-subtitle {
+    font-size: 1.2rem;
+    color: #951a29;
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+  
+  .physicalwellbeing-description {
+    font-size: 1rem;
+    color: #192549; /* Dark gray */
+    line-height: 1.5;
+    margin-top: 1rem;
+    font-family: 'Rubik', serif;
+  }
+  

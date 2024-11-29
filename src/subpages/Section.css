@@ -1,0 +1,47 @@
+/* Container styles */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items towards the top */
+    background: linear-gradient(to bottom, #f4d096, #ffffff);
+    position: relative;
+    overflow-y: auto;
+  }
+    
+  /* Circle styles */
+  .half-circle {
+    width: 900px;
+    height: 450px; /* Half of the height for a semi-circle */
+    background-color: #9d1d22;
+    border-top-left-radius: 450px; /* Adjust radius to match */
+    border-top-right-radius: 450px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 327px;
+  }
+    
+  /* Text styles */
+  .textsection {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 64px;
+    margin-top: 6rem;
+    line-height: 96px;
+  }
+  
+  .linkDiv {
+    display: inline-block;
+    /* Allows content alignment like a button */
+    cursor: pointer;
+    /* Makes the mouse pointer change to a hand icon */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+  }

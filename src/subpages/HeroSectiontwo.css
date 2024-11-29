@@ -1,0 +1,48 @@
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  /* Styling for the hero section */
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full-screen height */
+    text-align: center; /* Center text inside elements */
+    background: linear-gradient(to bottom, #fbebd6, #f5d4a5);
+  }
+  
+  .hero-title {
+    font-size: 24px;
+    color: #951A29;
+    font-family: 'Rubik', serif;
+    line-height: 28.44px;
+    margin: 10px 0; /* Combine top and bottom margins */
+  }
+  
+  .hero-subtitle {
+    font-size: 64px;
+    color: #951A29;
+    font-family: 'EB Garamond', serif;
+    line-height: 96px;
+    margin: 0; /* Remove unnecessary margins */
+  }
+  
+  .hero-subtitle2 {
+    font-size: 24px;
+    color: #951A29;
+    font-family: 'Rubik', serif;
+    line-height: 28.44px;
+    margin: 10px 0;
+  }
+  
+  .hero-divider {
+    font-size: 24px;
+    color: #951A29;
+    line-height: 50px;
+    animation: blink 1s infinite;
+    margin: 20px 0; /* Add spacing if needed */
+  }
+  

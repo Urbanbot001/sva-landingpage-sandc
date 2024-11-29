@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBEBD6; 
+  padding: 40px;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.imageWrapper {
+  width: 534px;
+  height: 534px;
+  overflow: hidden;
+  border-radius: 50%; /* Circular image */
+  position: relative; /* Ensure smooth transitions */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out; /* Smooth transition effect */
+}
+
+.textWrapper {
+  max-width: 500px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #951A29; /* Svaveda red for the heading */
+  margin-bottom: 16px;
+  font-family: 'EB Garamond', serif;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #192549;
+  margin-bottom: 24px;
+  font-family: 'Rubik', serif;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: #951A29; /* Match the link color */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  font-family: 'Rubik', serif;
+}
+
+.linkButton:hover {
+  text-decoration: underline; /* Optional hover effect */
+}

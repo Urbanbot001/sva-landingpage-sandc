@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+.wellness-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f5d4a5, #fbebd6);
+    height: 100vh;
+    position: relative;
+  }
+  
+  .central-image {
+    position: relative;
+    z-index: 2;
+    bottom: 12%;
+  }
+  
+  .central-image img {
+    border-radius: 40%;
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+  }
+  
+  .service-item {
+    position: absolute;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .service-item img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+  }
+  
+  .service-item p {
+    margin-top: 8px;
+    font-family: "EB Garamond", serif;
+    font-size: 14px;
+    color: #951a29;
+  }
+  
+  .coaching {
+    top: 34%;
+    left: 9%;
+  }
+  
+  .alternative-medicine {
+    top: 10%;
+    right: 20%;
+  }
+  
+  .esoteric {
+    bottom: 20%;
+    left: 21%;
+  }
+  
+  .energy-healing {
+    bottom: 45%;
+    right: 7%;
+  }
+  
+  .mindfulness {
+    bottom: 20%;
+    left: 71%;
+    transform: translateX(-50%);
+  }
+  
+  .mind-body {
+    top: 10%;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 600px; /* Increased the width size from 500px to 600px */
+}

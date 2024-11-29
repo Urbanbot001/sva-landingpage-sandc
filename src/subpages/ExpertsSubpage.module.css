@@ -1,0 +1,236 @@
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FBEBD6;
+    padding: 40px;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Content Wrapper */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+/* Left Section */
+.leftSection {
+    position: relative;
+    flex: 1;
+}
+
+.imageWrapper {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* Circular image */
+    position: relative;
+    margin: auto;
+    margin-left: -24rem;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Circular Outline */
+.circleOutline {
+    position: absolute;
+    width: 600px;
+    /* Slightly larger than the image wrapper */
+    height: 600px;
+    border: 1px solid #951A29;
+    /* Red border color */
+    border-radius: 50%;
+    /* Makes it circular */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Ensures it is behind the icons but above the image */
+    margin-left: -22rem;
+}
+
+/* Circular Icons */
+.circleIcons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Prevents interaction with icons */
+    z-index: 2;
+    /* Ensures icons are above the circle */
+}
+
+.icon {
+    position: absolute;
+    background-color: #fbeedb;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9e2a2b;
+    /* Red color for icons */
+    transform: translate(-50%, -50%);
+    /* Center the icons */
+}
+
+/* Positioning icons around the circle */
+.iconTop {
+    top: -5rem;
+    /* Slightly above the image */
+    right: 16rem;
+}
+
+.iconMiddle {
+    right: 6rem;
+    /* Slightly to the right */
+    top: 50%;
+    /* Center vertically */
+}
+
+.iconBottom {
+    bottom: -8rem;
+    /* Slightly below the image */
+    right: 16rem;
+}
+
+/* Right Section */
+.rightSection {
+    flex: 1;
+    max-width: 500px;
+}
+
+.heading {
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    color: #951829;
+    /* Svaveda red for the heading */
+    margin-bottom: 16px;
+    width: 671px;
+    height: 36px;
+    margin-right: -25rem;
+}
+
+.description {
+    font-family: 'Rubik', serif;
+    font-size: 24px;
+    color: #192549;
+    line-height: 36px;
+}
+
+/* Overlay Container */
+.overlayContainer {
+    position: relative;
+    width: 60px;
+    /* Adjust to match the size of the ellipse */
+    height: 60px;
+    /* Adjust to match the size of the ellipse */
+}
+
+/* Ellipse Image */
+.ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensure the ellipse fills the container */
+    height: 100%;
+    /* Maintain aspect ratio within the container */
+    z-index: 1;
+    /* Background layer */
+}
+
+/* Component Image */
+.component {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Offset for perfect centering */
+    width: 40%;
+    /* Adjust to control the size relative to the ellipse */
+    height: 40%;
+    /* Maintain aspect ratio for the overlay image */
+    z-index: 2;
+    /* Foreground layer */
+}
+
+/* Overlay Container for Middle Icon */
+.overlayContainermiddle {
+    position: relative;
+    width: 100px;
+    /* Same width and height */
+    height: 100px;
+    aspect-ratio: 1 / 1;
+    /* Forces a perfect square */
+    border-radius: 50%;
+    /* Makes it a circle */
+    overflow: hidden;
+    /* Ensure content stays within the circle */
+}
+
+/* Ellipse Image */
+.ellipsemiddle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Fill the container */
+    height: 100%;
+    /* Fill the container */
+    border-radius: 50%;
+    /* Maintain circular shape */
+    z-index: 1;
+}
+
+/* Component Image */
+.componentmiddle {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Perfect centering */
+    width: 60%;
+    /* Adjust size relative to the container */
+    height: 60%;
+    /* Adjust size relative to the container */
+    z-index: 2;
+}
+
+.versatileListings {
+    display: block;
+    margin-top: 6rem;
+}
+
+.linkDiv {
+    display: inline-block;
+    /* Allows content alignment like a button */
+    cursor: pointer;
+    /* Makes the mouse pointer change to a hand icon */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+  }

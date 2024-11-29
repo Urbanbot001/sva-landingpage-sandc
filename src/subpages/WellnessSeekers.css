@@ -1,0 +1,43 @@
+/* Main container */
+.wellnessseekers-container {
+    display: flex;
+    justify-content: flex-end; /* Move all content to the right */
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #fbebd6, #f5d4a5);
+    padding: 20px;
+  }
+  
+  /* Circle container */
+  .circleseekers-container {
+    position: relative;
+    width: 400px; /* Adjust the size of the circle */
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content inside the circle */
+    background: #f4d09c;
+    margin: 0; /* Remove any additional margin that might offset it */
+    margin-right: 10rem;
+  }
+  
+  /* Circle image */
+  .circle-imageseekers {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Text overlay */
+  .textseekers-overlay {
+    position: absolute;
+    font-family: "EB Garamond", serif;
+    font-size: 40px;
+    color: #580808;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+  }
+  

@@ -1,0 +1,45 @@
+/* Main container */
+.sanctuary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #fbecd8, #f4d09c);
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Content layout */
+  .sanctuary-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px; /* Spacing between image and text */
+  }
+  
+  /* Image container */
+  .image-container {
+    flex-shrink: 0;
+  }
+  
+  .rounded-image {
+    width: 250px; /* Adjust size of the image */
+    height: 350px;
+    border-radius: 45%;
+    object-fit: cover;
+    border: 2px solid #fbebd6; /* Optional border for better blending */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade during image change */
+  }
+  
+  /* Text container */
+  .text-container {
+    max-width: 600px;
+    font-family: "EB Garamond", serif;
+    color: #951a29; /* Dark red color */
+    line-height: 1.6;
+  }
+  
+  .text-container p {
+    font-size: 20px;
+    margin-bottom: 20px; /* Space between paragraphs */
+  }
+  

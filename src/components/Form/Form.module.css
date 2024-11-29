@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #951A29;
+    padding: 2rem;
+  }
+  
+  .formContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    color: white;
+  }
+  
+  .leftSection {
+    flex: 1;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  
+  .logo {
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .logoImage {
+    width: 68px;
+    height: 68px;
+  }
+  
+  .logoText {
+    width: 141.4px;
+    height: 34px;
+  }
+  
+  .rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', serif;
+  }
+  
+  .input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    outline: none;
+    width: 100%;
+    font-family: 'Rubik', serif;
+  }
+  
+  .input::placeholder {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .textArea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-family: 'Rubik', serif;
+  }
+  
+  .textArea::placeholder {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .radioGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: white;
+    gap: 2rem;
+  }
+  
+  .radioOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .radioOption input {
+    accent-color: white;
+  }
+  
+  .submitButton {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .submitButton:hover {
+    background-color: white;
+    color: #a21c1c;
+  }
+  
+  
